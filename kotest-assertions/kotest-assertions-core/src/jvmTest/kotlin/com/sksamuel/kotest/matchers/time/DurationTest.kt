@@ -12,13 +12,14 @@ import io.kotest.matchers.time.shouldNotHaveMillis
 import io.kotest.matchers.time.shouldNotHaveMinutes
 import io.kotest.matchers.time.shouldNotHaveSeconds
 import kotlin.time.Duration
+import kotlin.time.Duration.Companion.hours
 
 class DurationTest : FunSpec({
    test("should have minutes") {
-      Duration.hours(2).shouldHaveMinutes(120)
-      Duration.hours(2).shouldNotHaveMinutes(119)
+      2.hours.shouldHaveMinutes(120)
+      2.hours.shouldNotHaveMinutes(119)
       shouldThrow<AssertionError> {
-         Duration.hours(2).shouldNotHaveMinutes(120)
+         2.hours.shouldNotHaveMinutes(120)
       }.shouldHaveMessage("2h should not have 120 minutes")
    }
    test("should have hours") {

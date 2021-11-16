@@ -7,6 +7,8 @@ import io.kotest.assertions.timing.continually
 import io.kotest.core.spec.style.WordSpec
 import io.kotest.matchers.shouldBe
 import kotlin.time.Duration
+import kotlin.time.Duration.Companion.hours
+import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.hours
 
 class ContinuallyTest : WordSpec() {
@@ -14,22 +16,22 @@ class ContinuallyTest : WordSpec() {
   init {
     "continually" should {
       "pass working tests" {
-          continually(Duration.milliseconds(500)) {
-              (System.currentTimeMillis() > 0) shouldBe true
-          }
+         continually(500.milliseconds) {
+            (System.currentTimeMillis() > 0) shouldBe true
+         }
       }
       "fail broken tests immediately"  {
         shouldThrowAny {
-          continually(Duration.hours(12)) {
-            false shouldBe true
-          }
+           continually(12.hours) {
+              false shouldBe true
+           }
         }
       }
       "fail should throw the underlying error" {
         shouldThrowExactly<AssertionError> {
-          continually(Duration.hours(12)) {
-            throw AssertionError("boom")
-          }
+           continually(12.hours) {
+              throw AssertionError("boom")
+           }
         }.message shouldBe "boom"
       }
       "fail tests start off as passing then fail within the period" {

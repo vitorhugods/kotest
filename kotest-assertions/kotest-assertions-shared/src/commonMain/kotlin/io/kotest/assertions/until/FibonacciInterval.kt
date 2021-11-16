@@ -1,6 +1,7 @@
 package io.kotest.assertions.until
 
 import kotlin.time.Duration
+import kotlin.time.Duration.Companion.hours
 
 /**
  * Fibonacci delay implements a delay where each duration is calculated as a multiplier
@@ -29,7 +30,7 @@ class FibonacciInterval(private val base: Duration, private val offset: Int, pri
    }
 
    companion object {
-      val defaultMax = Duration.hours(2)
+      val defaultMax = 2.hours
    }
 }
 

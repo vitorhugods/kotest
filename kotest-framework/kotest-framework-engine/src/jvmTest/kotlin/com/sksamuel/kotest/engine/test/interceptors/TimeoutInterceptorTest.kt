@@ -13,6 +13,7 @@ import io.kotest.engine.test.scopes.NoopTestScope
 import io.kotest.matchers.shouldBe
 import kotlinx.coroutines.delay
 import kotlin.time.Duration
+import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.TimeSource
 import kotlin.time.milliseconds
 
@@ -30,7 +31,7 @@ class TimeoutInterceptorTest : FunSpec() {
          )
 
          TimeoutInterceptor(TimeSource.Monotonic.markNow()).intercept(
-            tc.copy(config = tc.config.copy(timeout = Duration.milliseconds(1))),
+            tc.copy(config = tc.config.copy(timeout = 1.milliseconds)),
             NoopTestScope(tc, coroutineContext)
          ) { _, _ ->
             delay(10000)
