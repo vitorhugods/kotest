@@ -70,7 +70,6 @@ kotlin {
             implementation(Libs.Coroutines.coreJvm)
             implementation(Libs.OpenTest4j.opentest4j)
             implementation(Libs.Apache.commonslang)
-            implementation(Libs.Mocking.mockk)
          }
       }
 

@@ -60,7 +60,6 @@ kotlin {
          dependsOn(commonMain)
          dependencies {
             implementation(Libs.Coroutines.jdk8)
-            implementation(Libs.Wumpz.diffutils)
             implementation(Libs.OpenTest4j.opentest4j)
          }
       }

@@ -2,7 +2,6 @@ object Libs {
 
    object Kotlin {
       const val version = "1.6.0"
-      const val compilerEmbeddable = "org.jetbrains.kotlin:kotlin-compiler-embeddable:$version"
    }
 
    object Kotest {
@@ -34,24 +33,11 @@ object Libs {
    }
 
    object Apache {
-      const val commonsio = "commons-io:commons-io:_"
       const val commonslang = "org.apache.commons:commons-lang3:_"
-   }
-
-   object MockServer {
-      const val netty = "org.mock-server:mockserver-netty:_"
-   }
-
-   object Rgxgen {
-      const val rgxgen = "com.github.curious-odd-man:rgxgen:_"
    }
 
    object OpenTest4j {
       const val opentest4j = "org.opentest4j:opentest4j:_"
-   }
-
-   object Wumpz {
-      const val diffutils = "io.github.java-diff-utils:java-diff-utils:_"
    }
 
    object Coroutines {
@@ -61,15 +47,5 @@ object Libs {
       const val coreNative = "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:_"
       const val jdk8 = "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:_"
       const val test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:_"
-   }
-
-   object Serialization {
-      const val json = "org.jetbrains.kotlinx:kotlinx-serialization-json:_"
-   }
-
-   object Ktor {
-      const val clientJs = "io.ktor:ktor-client-js:_"
-      const val clientCore = "io.ktor:ktor-client-core:_"
-      const val clientApache = "io.ktor:ktor-client-apache:_"
    }
 }
