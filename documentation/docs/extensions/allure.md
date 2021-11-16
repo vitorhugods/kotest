@@ -54,7 +54,7 @@ plugin to your build's plugins block.
 ```kotlin
 plugins {
   ...
-  id("io.qameta.allure") version "2.8.1"
+  id("io.qameta.allure") version "2.9.6"
 }
 ```
 
@@ -63,8 +63,8 @@ configure junit and kotest takes care of this for you anyway).
 
 ```kotlin
 allure {
-  autoconfigure = false
-  version = "2.13.1"
+  adapter.autoconfigure.set(false)
+  version.set("2.13.1")
 }
 ```
 
