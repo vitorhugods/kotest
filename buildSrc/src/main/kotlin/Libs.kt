@@ -1,29 +1,15 @@
 object Libs {
 
    object Kotlin {
-      const val kotlinScriptRuntime = "org.jetbrains.kotlin:kotlin-script-runtime:_"
-      const val kotlinScriptUtil = "org.jetbrains.kotlin:kotlin-script-util:_"
-      const val kotlinScriptJvm = "org.jetbrains.kotlin:kotlin-scripting-jvm:_"
-      const val compiler = "org.jetbrains.kotlin:kotlin-compiler:_"
-      const val compilerEmbeddable = "org.jetbrains.kotlin:kotlin-compiler-embeddable:_"
+      const val version = "1.6.0"
+      const val compilerEmbeddable = "org.jetbrains.kotlin:kotlin-compiler-embeddable:$version"
    }
 
    object Kotest {
-      object Extensions {
-         const val MockServer = "io.kotest.extensions:kotest-extensions-mockserver:_"
-      }
    }
 
    object Ajalt {
       const val mordant = "com.github.ajalt:mordant:_"
-   }
-
-   object Jayway {
-      const val jsonpath = "com.jayway.jsonpath:json-path:_"
-   }
-
-   object JUnit4 {
-      const val junit4 = "junit:junit:_"
    }
 
    object JUnitPlatform {
@@ -32,10 +18,6 @@ object Libs {
       const val launcher = "org.junit.platform:junit-platform-launcher:_"
       const val api = "org.junit.platform:junit-platform-suite-api:_"
       const val testkit = "org.junit.platform:junit-platform-testkit:_"
-   }
-
-   object Jdom {
-      const val jdom2 = "org.jdom:jdom2:_"
    }
 
    object JUnitJupiter {
