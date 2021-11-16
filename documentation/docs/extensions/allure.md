@@ -10,7 +10,7 @@ slug: allure.html
 It works by generating report files which are then used to create the final HTML report.
 You can think of it as like the traditional junit report but more advanced and detailed.
 
-:::note "Example project"
+:::tip Example project
 If you prefer to skip the docs, there is a working example project you can clone [here](https://github.com/kotest/kotest-extensions-allure)
 :::
 
