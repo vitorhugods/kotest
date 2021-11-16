@@ -90,8 +90,4 @@ object Libs {
       const val clientCore = "io.ktor:ktor-client-core:_"
       const val clientApache = "io.ktor:ktor-client-apache:_"
    }
-
-   object KotlinTime {
-      const val kotlintime = "org.jetbrains.kotlinx:kotlinx-datetime:_"
-   }
 }
