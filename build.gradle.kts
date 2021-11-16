@@ -1,15 +1,9 @@
 buildscript {
-
    repositories {
       mavenCentral()
       mavenLocal()
       google()
       gradlePluginPortal()
-   }
-
-   dependencies {
-      // To be uncommented if adding any Android project
-      classpath("com.android.tools.build:gradle:7.0.3")
    }
 }
 
