@@ -34,7 +34,7 @@ Once the module has been added to your buld, wire in the `AllureTestReporter` cl
 using [project config](../framework/project_config.md).
 
 ```kotlin
-class MyConfig : AbstractProjectConfig {
+class MyConfig : AbstractProjectConfig() {
     override fun listeners() = listOf(AllureTestReporter())
 }
 ```
