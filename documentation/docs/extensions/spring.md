@@ -6,6 +6,11 @@ slug: spring.html
 ---
 
 Kotest offers a Spring extension that allows you to test code that wires dependencies using Spring.
+
+:::tip Example projects
+If you prefer to skip the docs, there are working example projects you can clone [here for webflux](https://github.com/kotest/kotest-examples-spring-webflux)
+:::
+
 To use this extension add the `io.kotest.extensions:kotest-extensions-spring` module to your test compile path.
 
 [<img src="https://img.shields.io/maven-central/v/io.kotest.extensions/kotest-extensions-spring.svg?label=latest%20release"/>](https://search.maven.org/artifact/io.kotest.extensions/kotest-extensions-spring)
@@ -36,7 +41,7 @@ This should point to a class annotated with the Spring `@Configuration` annotati
 point to a [specific application context file](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-profiles.html).
 
 :::note
-In Kotest 4.3 and earlier, the Spring extension was called `SpringListener`. This extension has now been deprecated in favour of `SpringExtension`. The usage is the same, but the SpringExtension has more functionality. 
+In Kotest 4.3 and earlier, the Spring extension was called `SpringListener`. This extension has now been deprecated in favour of `SpringExtension`. The usage is the same, but the SpringExtension has more functionality.
 :::
 
 ### Constructor Injection

@@ -11,7 +11,7 @@ It works by generating report files which are then used to create the final HTML
 You can think of it as like the traditional junit report but more advanced and detailed.
 
 :::tip Example project
-If you prefer to skip the docs, there is a working example project you can clone [here](https://github.com/kotest/kotest-extensions-allure)
+If you prefer to skip the docs, there is a working example project you can clone [here](https://github.com/kotest/kotest-examples-allure)
 :::
 
 There are two steps to allure. The first is to generate the raw data when executing tests, the second is to
