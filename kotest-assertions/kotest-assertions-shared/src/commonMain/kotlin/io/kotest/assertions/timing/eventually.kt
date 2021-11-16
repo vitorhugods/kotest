@@ -11,7 +11,6 @@ import kotlin.time.Duration
 import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.TimeMark
 import kotlin.time.TimeSource
-import kotlin.time.milliseconds
 
 /**
  * Runs a function until it doesn't throw as long as the specified duration hasn't passed

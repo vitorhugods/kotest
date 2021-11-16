@@ -35,8 +35,6 @@ kotlin {
             api(project(Projects.Framework.engine))
             api(project(Projects.Discovery))
             api(project(Projects.Assertions.Core))
-            api(project(Projects.Extensions))
-            api(project(Projects.Framework.concurrency))
             api(Libs.Coroutines.coreJvm)
             api(Libs.JUnitPlatform.engine)
             api(Libs.JUnitPlatform.api)

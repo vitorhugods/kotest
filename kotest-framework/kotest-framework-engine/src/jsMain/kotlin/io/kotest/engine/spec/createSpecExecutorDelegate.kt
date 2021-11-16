@@ -12,13 +12,12 @@ import io.kotest.engine.describe
 import io.kotest.engine.it
 import io.kotest.engine.listener.TestEngineListener
 import io.kotest.engine.test.TestCaseExecutor
-import io.kotest.engine.test.scopes.TerminalTestScope
 import io.kotest.engine.test.interceptors.testNameEscape
 import io.kotest.engine.test.names.getDisplayNameFormatter
+import io.kotest.engine.test.scopes.TerminalTestScope
 import io.kotest.engine.test.status.isEnabledInternal
 import io.kotest.engine.xit
 import io.kotest.mpp.bestName
-import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.promise
 import kotlin.coroutines.coroutineContext
@@ -43,7 +42,6 @@ internal class JavascriptSpecExecutorDelegate(private val configuration: Configu
 
    private val materializer = Materializer(configuration)
 
-   @DelicateCoroutinesApi
    override suspend fun execute(spec: Spec): Map<TestCase, TestResult> {
       val cc = coroutineContext
       // we use the spec itself as an outer/parent test.

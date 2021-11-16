@@ -66,7 +66,6 @@ kotlin {
       val jvmTest by getting {
          dependsOn(jvmMain)
          dependencies {
-            implementation(project(Projects.Property))
             implementation(project(Projects.JunitRunner))
             implementation(Libs.Coroutines.coreJvm)
             implementation(Libs.OpenTest4j.opentest4j)
