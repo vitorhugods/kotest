@@ -19,7 +19,7 @@ See detailed post about 5.0 features and changes [here](blog/release_5.0.md)
 * `equalJson` has an added parameter to support the new `shouldEqualSpecifiedJson` assertion
 * The deprecated `RuntimeTagExtension` has been undeprecated but moved to a new package.
 * When using inspectors, the deprecated `kotlintest.assertions.output.max` system property has been removed. This was replaced with `kotest.assertions.output.max` in 4.0.
-
+* The property test datetime arbs have moved to their own top level repo. Replace `io.kotest:kotest-property-datetime` with `io.kotest.extensions:kotest-property-datetime:1.0.0`. Note the version reset.
 
 #### Fixes
 
