@@ -172,5 +172,5 @@ data class EventuallyState<T>(
 typealias EventuallyPredicate<T> = (T) -> Boolean
 
 fun interface EventuallyListener<T> {
-   fun onEval(state: EventuallyState<T>)
+   suspend fun onEval(state: EventuallyState<T>)
 }

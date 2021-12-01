@@ -13,7 +13,7 @@ import kotlin.time.TimeSource
 data class ContinuallyState(val start: TimeMark, val end: TimeMark, val times: Int)
 
 fun interface ContinuallyListener<in T> {
-   fun onEval(t: T, state: ContinuallyState)
+   suspend fun onEval(t: T, state: ContinuallyState)
 
    companion object {
       val noop = ContinuallyListener<Any?> { _, _ -> }
